@@ -1,10 +1,10 @@
 package com.bishoptod3.controllers;
 
+import com.bishoptod3.services.JokeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.bishoptod3.services.JokeService;
 
 /**
  * Created by Loky on 06/08/2018.

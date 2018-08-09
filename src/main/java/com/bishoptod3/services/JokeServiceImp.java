@@ -1,6 +1,7 @@
 package com.bishoptod3.services;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,8 +12,9 @@ public class JokeServiceImp implements JokeService {
 
     private final ChuckNorrisQuotes quotes;
 
-    public JokeServiceImp() {
-        this.quotes = new ChuckNorrisQuotes();
+    @Autowired
+    public JokeServiceImp(ChuckNorrisQuotes quotes) {
+        this.quotes = quotes;
     }
 
     @Override
